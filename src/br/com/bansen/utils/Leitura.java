@@ -16,4 +16,10 @@ public class Leitura {
 			}
 		}
 	}
+	
+//	public static String leString() {
+//		while() {
+//			entrada.readLine();
+//		}
+//	}
 }

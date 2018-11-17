@@ -5,58 +5,51 @@ import java.util.Date;
 public class Pessoa {
 
 	private String nome;
-	private int rg;
+	private String sobrenome;
+	private String email;
+	private String sexo;
 	private String cpf;
+	private Integer rg;
 	private Date dataNasc;
 	private String telefone1;
 	private String telefone2;
-	private String endereco;
-	private int numero;
-	private String bairro;
-	private String municipio;
-	private String uf;
-	private int cep;
-
+	private boolean ativo;
+	
 	public Pessoa() {
-		this(null, 0, null, null, null, null, null, 0, null, null, null, 0);
+		this(null, null, null, null, null, 0, null, null, null, false);
 	}
 
-	public Pessoa(String nome, int rg, String cpf, Date dataNasc, String telefone1, String telefone2, String endereco,
-				  int numero, String bairro, String municipio, String uf, int cep) {
+	public Pessoa(String nome, String sobrenome, String email, String sexo, String cpf, Integer rg, Date dataNasc, String telefone1, String telefone2, boolean ativo) {
 
 		setNome(nome);
-		setRg(rg);
+		setSobrenome(sobrenome);
+		setEmail(email);
 		setCpf(cpf);
+		setRg(rg);
 		setDataNasc(dataNasc);
 		setTelefone1(telefone1);
 		setTelefone2(telefone2);
-		setEndereco(endereco);
-		setNumero(numero);
-		setBairro(bairro);
-		setMunicipio(municipio);
-		setUf(uf);
-		setCep(cep);
-
+		setAtivo(ativo);
 	}
 
 	public String getNome() {
-		return nome;
+		return this.nome;
 	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	public int getRg() {
-		return rg;
+	public Integer getRg() {
+		return this.rg;
 	}
 
-	public void setRg(int rg) {
+	public void setRg(Integer rg) {
 		this.rg = rg;
 	}
 
 	public String getCpf() {
-		return cpf;
+		return this.cpf;
 	}
 
 	public void setCpf(String cpf) {
@@ -64,7 +57,7 @@ public class Pessoa {
 	}
 
 	public Date getDataNasc() {
-		return dataNasc;
+		return this.dataNasc;
 	}
 
 	public void setDataNasc(Date dataNasc) {
@@ -72,7 +65,7 @@ public class Pessoa {
 	}
 
 	public String getTelefone1() {
-		return telefone1;
+		return this.telefone1;
 	}
 
 	public void setTelefone1(String telefone1) {
@@ -80,59 +73,42 @@ public class Pessoa {
 	}
 
 	public String getTelefone2() {
-		return telefone2;
+		return this.telefone2;
 	}
 
 	public void setTelefone2(String telefone2) {
 		this.telefone2 = telefone2;
 	}
 
-	public String getEndereco() {
-		return endereco;
+	public String getSobrenome() {
+		return this.sobrenome;
 	}
 
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
 	}
-
-	public int getNumero() {
-		return numero;
+	
+	public void setEmail(String email) {
+		this.email = email;
 	}
-
-	public void setNumero(int numero) {
-		this.numero = numero;
+	
+	public String getEmail() {
+		return this.email;
 	}
-
-	public String getBairro() {
-		return bairro;
+	
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
 	}
-
-	public void setBairro(String bairro) {
-		this.bairro = bairro;
+	
+	public String getSexo() {
+		return this.sexo;
 	}
-
-	public String getMunicipio() {
-		return municipio;
+	
+	public void setAtivo(boolean ativo) {
+		this.ativo = ativo;
 	}
-
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
+	
+	public boolean getAtivo() {
+		return this.ativo;
 	}
-
-	public String getUf() {
-		return uf;
-	}
-
-	public void setUf(String uf) {
-		this.uf = uf;
-	}
-
-	public int getCep() {
-		return cep;
-	}
-
-	public void setCep(int cep) {
-		this.cep = cep;
-	}
-
 }
