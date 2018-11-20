@@ -1,5 +1,2 @@
-José;1234034;045-065-069-30;06081986;56-7678965;WaldemarMed;594;Centro;Nova Trento;SC;123445465;
-João;0304058;045-065-069-30;06081986;56-7678965;WaldemarMed;594;Victor Konder;Blu;SC;123445465;
-Paulo;0987657;045-065-069-30;06081986;56-7678965;WaldemarMed;594;Centro;Brusque;SC;123445465;
-Jardel;0987980;045-065-069-30;06081986;56-7678965;WaldemarMed;594;Centro;Florianópolis;SC;123445465;
-Carlos;4445682;045-065-069-30;06081986;56-7678965;WaldemarMed;594;Centro;Curitiba;SC;123445465;
+Jardel;Sgrott Nagel;jardel_sgrott@estudante.sc.senai.br;masculino;000.000.000-00;01010111;199405-03;(20) 1489-3904;(20) 1930-1020; true;
+Débora;Justen;dj_sobre@estudante.sc.senai.br;feminino;000.000.000-00;0078909;199405-03;(20) 1489-3904;(20) 1930-1020; false;

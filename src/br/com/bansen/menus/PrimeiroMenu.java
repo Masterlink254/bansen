@@ -32,7 +32,6 @@ public class PrimeiroMenu {
 		case 2:
 			
 			System.out.println("Volte sempre! Saindo do sistema...");
-			
 			break;
 		}
 	}

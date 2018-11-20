@@ -19,8 +19,7 @@ public abstract class OperacaoBanco {
 			List<Pessoa> listaPessoas = new ArrayList<Pessoa>();
 			for (String p : objetos) {
 				String[] dados = p.split(";");
-//				objetos.add(new Pessoa(dados[0], Integer.valueOf(dados[1]), dados[2], Date.valueOf(dados[3]), dados[4], dados[5], dados[6], Integer.valueOf(dados[7]), dados[8], dados[9], dados[10], Integer.valueOf(dados[11])));
-				listaPessoas.add(new Pessoa(dados[0], dados[1], dados[2], dados[3], dados[4], Integer.valueOf(dados[5]), Date.valueOf(dados[6]), dados[7], dados[8], Boolean.valueOf(dados[9])));				
+				listaPessoas.add(new Pessoa(dados[0], dados[1], dados[2], dados[3], dados[4], Integer.valueOf(dados[5]), Date.valueOf(dados[6]), dados[7], dados[8], Boolean.valueOf(dados[9])));
 			}
 			return true;
 		} catch (Exception e) {
