@@ -1,19 +1,14 @@
 package br.com.bansen.operacoes;
 
-import java.rmi.ConnectException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import br.com.bansen.banco.Pessoa;
 import br.com.bansen.conexao.Conexao;
+import br.com.bansen.usuarios.Pessoa;
 
 public class PopulaBanco {
 
 	public boolean inserePessoa(List<Pessoa> objetos) throws Exception {
-//		List<Pessoa> falhados = new ArrayList<Pessoa>();
 		Connection conexao = Conexao.abreConexao();
 		try {
 			PreparedStatement pstPessoa = conexao.prepareStatement("INSERT INTO pessoa (nome, sobrenome, email, sexo, cpf, rg, dataNasc, telefone1, telefone2, ativo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);");
@@ -32,9 +27,7 @@ public class PopulaBanco {
 					pstPessoa.executeUpdate();
 					return true;
 				} catch (Exception e) {
-//					new DAOException(EErrosDAO.INSERE_DADO, e.getMessage(), this.getClass());
-					new Exception(e.getMessage());
-//					falhados.add(pessoa);
+					throw new Exception(e.getMessage());
 				}
 			}
 			return true;
@@ -43,7 +36,6 @@ public class PopulaBanco {
 		} finally {
 			Conexao.fechaConexao();
 		}
-//		return falhados;
 		return false;
 	}
 }

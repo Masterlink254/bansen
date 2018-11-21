@@ -1,4 +1,4 @@
-package br.com.bansen.banco;
+package br.com.bansen.usuarios;
 
 import java.util.Date;
 
