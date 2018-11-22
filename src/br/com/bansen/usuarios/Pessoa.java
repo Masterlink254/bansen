@@ -24,6 +24,7 @@ public class Pessoa {
 		setNome(nome);
 		setSobrenome(sobrenome);
 		setEmail(email);
+		setSexo(sexo);
 		setCpf(cpf);
 		setRg(rg);
 		setDataNasc(dataNasc);

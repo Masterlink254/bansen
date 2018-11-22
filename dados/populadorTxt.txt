@@ -1,2 +1,2 @@
-Jardel;Sgrott Nagel;jardel_sgrott@estudante.sc.senai.br;masculino;000.000.000-00;01010111;199405-03;(20) 1489-3904;(20) 1930-1020; true;
-Débora;Justen;dj_sobre@estudante.sc.senai.br;feminino;000.000.000-00;0078909;199405-03;(20) 1489-3904;(20) 1930-1020; false;
+Jardel;Sgrott Nagel;jardel_sgrott@estudante.sc.senai.br;masculino;000.000.000-00;01010111;1994-05-03;(20) 1489-3904;(20) 1930-1020; true;
+Débora;Justen;dj_sobre@estudante.sc.senai.br;feminino;000.000.000-00;0078909;1994-02-03;(20) 1489-3904;(20) 1930-1020; false;
