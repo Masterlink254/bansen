@@ -25,8 +25,8 @@ public class PopulaBanco {
 				pstPessoa.setString(8, pessoa.getTelefone1());
 				pstPessoa.setString(9, pessoa.getTelefone2());
 				pstPessoa.setBoolean(10, pessoa.getAtivo());
+				pstPessoa.executeUpdate();
 			}
-			pstPessoa.executeUpdate();
 			System.out.println("inseriu!!!");
 			return true;
 		} catch (Exception e) {
