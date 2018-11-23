@@ -12,7 +12,7 @@ public class PrimeiroMenu {
 
 		switch (Leitura.leInteiro()) {
 		case 1:
-			System.out.println("Criando e populando Banco de Dados...");
+			System.out.println("Iniciando a criação e população do banco de dados...");
 			try {
 				CriaBanco.criarTabelas();
 				CriaBanco.relacionaTabelasFK();
