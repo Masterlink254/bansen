@@ -24,12 +24,11 @@ public abstract class OperacaoBanco {
 				listaPessoas.add(contador, pes);
 				contador++;
 			}
-			System.out.println("inserindo...");
 			populador.inserePessoa(listaPessoas);
-			return true;
 		} catch (Exception e) {
 			throw new Exception(e.getMessage());
 		}
+		return true;
 	}
 }
 

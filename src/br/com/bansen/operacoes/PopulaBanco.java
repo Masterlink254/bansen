@@ -10,7 +10,6 @@ import br.com.bansen.usuarios.Pessoa;
 public class PopulaBanco {
 
 	public boolean inserePessoa(List<Pessoa> objetos) throws Exception {
-		System.out.println("Abriu conexão para inserir...");
 		Connection conexao = Conexao.abreConexao();
 		try {
 			PreparedStatement pstPessoa = conexao.prepareStatement("INSERT INTO pessoa (nome, sobrenome, email, sexo, cpf, rg, dataNasc, telefone1, telefone2, ativo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);");
@@ -27,12 +26,12 @@ public class PopulaBanco {
 				pstPessoa.setBoolean(10, pessoa.getAtivo());
 				pstPessoa.executeUpdate();
 			}
-			System.out.println("inseriu!!!");
-			return true;
 		} catch (Exception e) {
-			throw new SQLException("Não inseriu!" + e.getMessage());
+			throw new SQLException("Erro inserções!" + e.getMessage());
 		} finally {
 			Conexao.fechaConexao();
 		}
+		System.out.println("Inserções concluídas com sucesso!");
+		return true;
 	}
 }
