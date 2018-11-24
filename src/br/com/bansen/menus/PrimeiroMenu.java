@@ -2,6 +2,7 @@ package br.com.bansen.menus;
 
 import br.com.bansen.operacoes.OperacaoBanco;
 import br.com.bansen.populador.CriaBanco;
+import br.com.bansen.populador.PopulaBanco;
 import br.com.bansen.utils.Leitura;
 
 public class PrimeiroMenu {
@@ -16,7 +17,8 @@ public class PrimeiroMenu {
 			try {
 				CriaBanco.criarTabelas();
 				CriaBanco.relacionaTabelasFK();
-				OperacaoBanco.criaPopulaBanco(); 
+				PopulaBanco.listarPessoas();
+				PopulaBanco.ListarContas();
 			}catch (Exception e) {
 				System.out.println(e.getMessage());
 				break;
@@ -27,6 +29,6 @@ public class PrimeiroMenu {
 			break;
 		}
 		
-		System.out.println("Finalizado com sucesso!");
+		System.out.println("Finalizado!");
 	}
 }

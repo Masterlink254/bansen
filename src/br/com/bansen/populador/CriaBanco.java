@@ -43,10 +43,11 @@ public class CriaBanco {
 		String conta = "CREATE TABLE conta (" 
 				+ "id_conta INT NOT NULL PRIMARY KEY AUTO_INCREMENT," 
 				+ "numero VARCHAR(45) NOT NULL,"
-				+ "tipo_conta INT NOT NULL," 
-				+ "saldo INT NOT NULL," 
+				+ "tipo_conta VARCHAR(2) NOT NULL," 
+				+ "saldo DECIMAL(10,2) NOT NULL," 
 				+ "titular VARCHAR(45) NOT NULL,"
-				+ "fk_id_usuario INT NOT NULL);";
+				+ "senha VARCHAR(45) NOT NULL,"
+				+ "fk_id_usuario INT);";
 		
 		String movimentacao = "CREATE TABLE movimentacao ("
 				+ "id_movimentacao INT NOT NULL PRIMARY KEY AUTO_INCREMENT," 
